@@ -143,7 +143,7 @@ class MeetingEnded extends React.PureComponent {
       comment: MeetingEnded.getComment(),
       userRole: this.localUserRole,
     };
-    const url = '/html5client/feedback';
+    const url = '/html5client_freddy/feedback';
     const options = {
       method: 'POST',
       body: JSON.stringify(message),
