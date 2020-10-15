@@ -57,7 +57,7 @@ class Captions extends React.Component {
     if (clear) {
       this.text = '';
     } else {
-      const text = this.text;
+      const text = data;
       this.text = CaptionsService.formatCaptionsText(text);
     }
   }
