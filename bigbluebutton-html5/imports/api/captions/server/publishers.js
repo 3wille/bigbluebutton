@@ -10,7 +10,7 @@ function captions() {
   const { meetingId } = extractCredentials(this.userId);
   Logger.debug(`Publishing Captions for ${meetingId}`);
 
-  return Captions.find({ meetingId });
+  return Captions.find({ meetingId }, { disableOplog: true, pollingIntervalMs: 250 });
 }
 
 function publish(...args) {
